@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story World | Beyond Imagination</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div id="stars"></div>
+    <div class="ambient one"></div>
+    <div class="ambient two"></div>
+
+    <header>
+        <div class="brand">✦ STORY <span>WORLD</span></div>
+        <div class="header-note">
+            WHERE IMAGINATION COMES ALIVE
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Welcome Screen -->
+        <section id="welcome" class="hero">
+
+            <div class="portal">
+                <div class="portal-symbol">✧</div>
+            </div>
+
+            <p class="eyebrow">
+                ✦ ENTER A WORLD BEYOND REALITY ✦
+            </p>
+
+            <h1>
+                Somewhere Between<br>
+                <span>Dreams & Magic</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover forgotten kingdoms, mysterious worlds
+                and extraordinary adventures.
+                Your imagination begins here.
+            </p>
+
+            <button class="gold-button" id="startBtn">
+                Begin Your Story ✧
+            </button>
+
+            <div class="small-note">
+                MADE FOR DREAMERS, EXPLORERS & STORY LOVERS
+            </div>
+
+        </section><!-- Story Creation Screen -->
+        <section id="creator" class="creator hidden">
+
+            <p class="eyebrow">✧ THE NEXT WORLD IS YOURS ✧</p>
+
+            <h2 class="section-title">
+                Create Your <span>Universe</span>
+            </h2>
+
+            <p class="section-description">
+                Give your imagination a beginning.
+                Let AI write the journey.
+            </p>
+
+            <div class="form-card">
+
+                <label for="storyIdea">YOUR IMAGINATION</label>
+
+                <textarea
+                    id="storyIdea"
+                    placeholder="A mysterious door opens inside an ancient magical forest..."
+                    rows="4"></textarea>
+
+                <div class="form-row">
+
+                    <div>
+                        <label for="genre">CHOOSE YOUR WORLD</label>
+
+                        <select id="genre">
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Fairytale">Fairytale</option>
+                            <option value="Horror">Horror</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="length">STORY LENGTH</label>
+
+                        <select id="length">
+                            <option value="Short">Short</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Long">Long</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <button id="generateBtn" class="gold-button">
+                    ✨ Bring My Story To Life
+                </button>
+
+                <p id="status" class="status"></p>
+
+            </div>
+        </section><!-- Magical Storybook -->
+        <section id="storyResult" class="reader hidden">
+
+            <p class="eyebrow">✧ A NEW WORLD HAS BEEN BORN ✧</p>
+
+            <h2 class="section-title">
+                Your <span>Storybook</span>
+            </h2>
+
+            <div class="book">
+
+                <!-- Left Page -->
+                <div class="art-page">
+                    <div class="art-moon"></div>
+
+                    <div class="art-title" id="artTitle">
+                        
+                    </div>
+
+                    <div class="art-caption">
+                        ✧ EVERY JOURNEY BEGINS WITH A DREAM ✧
+                    </div>
+                </div>
+
+                <!-- Right Page -->
+                <div class="text-page">
+
+                    <div class="book-top">
+                        <span>STORY WORLD</span>
+                        <span id="pageNumber">PAGE 01</span>
+                    </div>
+
+                    <h2 id="storyTitle">Your Story</h2>
+
+                    <div class="gold-line"></div>
+
+                    <article id="storyPage" class="story-page">
+                    </article>
+
+                    <div class="book-bottom">
+                        <span>✦ THE STORY ARCHIVES</span>
+                        <span id="pageCount"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Page Controls -->
+            <div class="controls">
+
+                <button id="previousBtn" class="secondary-button">
+                    ← Previous
+                </button>
+
+                <button id="nextBtn" class="gold-button">
+                    Next Page →
+                </button>
+
+            </div>
+
+            <div class="extra-controls">
+
+                <button id="copyBtn" class="text-button">
+                    Copy Story
+                </button>
+
+                <button id="againBtn" class="text-button">
+                    Create Another Story ✧
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        ✦ STORY WORLD ✦
+        <p>Every universe begins with a single idea.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
